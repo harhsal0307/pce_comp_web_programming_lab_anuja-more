@@ -5,11 +5,11 @@
     padding: 0;
 }
 .container {
-    align-items: center;
+    align-items: left;
     margin: 0;
     position: relative;
-    align-items: center;
-    background-image: url(bg1.jpg);
+    align-items: left;
+    background-image: url(static/img/medical-desk-with-stethoscope-mask.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -45,7 +45,7 @@ p{
 .center{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     width: 400px;
     /* background: white; */
