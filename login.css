@@ -21,7 +21,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 .logbox{
     display: flex;
@@ -34,7 +34,7 @@
     justify-content: center;
 }
 .logbox {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 p{
     font-size: 40px;
@@ -73,7 +73,7 @@ p{
     width: 100%;
     padding: 0 5px;
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     background: none;
     outline: none;
@@ -121,7 +121,7 @@ p{
     height: 50px;
     border: 1px solid;
     /* background: #2691d9; */
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.85);
 
     border-radius: 25px;
     font-size: 18px;
