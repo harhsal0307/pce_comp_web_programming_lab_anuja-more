@@ -3,7 +3,8 @@
     color: aliceblue;
     margin: 0;
     padding: 0;
-}
+} 
+/* Making Sure or Initializing Paddings and Margins of the webpage */
 .container {
     align-items: left;
     margin: 0;
@@ -14,6 +15,7 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+/* Styles for the login entry box */
 .bgimg::after {
     content: ' ';
     position: absolute;
@@ -23,25 +25,14 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.15);
 }
-.logbox{
-    display: flex;
-    position: relative;
-    background-color: aliceblue;
-    width: 355px;
-    height: 355px;
-    top: 150px;
-    left: 480px;
-    justify-content: center;
-}
-.logbox {
-    background-color: rgba(0, 0, 0, 0.85);
-}
+/* giving a tranparent look to the background */
 p{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     color: aliceblue;   
 }
+/* Paragraph Styling (basically the texts) */
 .center{
     position: absolute;
     top: 50%;
@@ -50,16 +41,17 @@ p{
     width: 400px;
     /* background: white; */
     background-color: rgba(0, 0, 0, 0.55);
-
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
   }
+/* The Entries Box styles */
   .center h1{
     text-align: center;
     color: aliceblue;
     padding: 20px 0;
     border-bottom: 1px solid silver;
   }
+  /* Styling the text in the form a lil different */
   .center form{
     padding: 0 40px;
     box-sizing: border-box;
@@ -69,6 +61,7 @@ p{
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
   }
+  /* Form input field styles so it does not look congested  */
   .txt_field input{
     width: 100%;
     padding: 0 5px;
@@ -104,10 +97,12 @@ p{
     color: aliceblue;
     font-weight: bold;
   }
+  /* Lifting the labels a lil bit above to make space for the input */
   .txt_field input:focus ~ span::before,
   .txt_field input:valid ~ span::before{
     width: 100%;
   }
+  /* Animating the borders for design purpose */
   .pass{
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
@@ -116,6 +111,7 @@ p{
   .pass:hover{
     text-decoration: underline;
   }
+  /* Password Links ko different style */
   input[type="submit"]{
     width: 100%;
     height: 50px;
@@ -135,6 +131,7 @@ p{
     border: 2px solid;
     transition: .25s;
   }
+  /* Submit Button Styles */
   .signup_link{
     margin: 30px 0;
     text-align: center;
@@ -148,3 +145,60 @@ p{
   .signup_link a:hover{
     text-decoration: underline;
   }
+/* Yaha se the media queries begin to make the page responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+      position: relative;
+      align-items: center; /* Center content vertically for smaller screens */
+      height: auto; /* Allow the container to adjust its height based on content for smaller screens */
+  }
+  .center {
+    position: relative;
+    top: -450px
+  }
+
+  .bgimg {
+    height: 100vh;
+    background-image: url(static/img/medical-desk-with-stethoscope-mask.jpg);
+    background-size: cover; 
+  }
+
+  .logbox {
+      top: 50px; /* Adjust the top margin for smaller screens */
+      left: 20px; /* Adjust the left margin for smaller screens */
+      width: calc(100% - 40px); /* Take full width with some padding for smaller screens */
+  }
+
+  .center {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%; /* Adjust the width for smaller screens */
+  }
+
+  .center h1 {
+      padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+
+  .center form {
+      padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .bgimg {
+    background-size: cover;
+}
+
+  .bgimg::after {
+    background-color: rgba(0, 0, 0, 0.25); /* Adjust the background overlay transparency for smaller screens */
+}
+}
+
+@media only screen and (max-width: 480px) {
+  .logbox {
+      top: 20px; /* Further adjust the top margin for even smaller screens */
+      width: calc(100% - 20px); /* Take full width with less padding for even smaller screens */
+  }
+
+  .center {
+      width: 90%; /* Adjust the width for even smaller screens */
+  }
+}
