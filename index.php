@@ -48,7 +48,7 @@
         <!-- Navbar ends here -->
         <!-- Content Part Starts here -->
         <div class="second">
-            <p class="second1">Welcome to BIOSync!!</p>
+            <p class="second1">Welcome to MedMingle!!</p>
         </div>
         <!-- Content Part Ends Here -->
     </div>
