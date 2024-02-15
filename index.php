@@ -19,7 +19,7 @@
             <div class="bgimg"></div>
             <div class="navbar">
                 <div class="logo">
-                    <h1>MedMingle</h1>
+                    <h1>BIOSync</h1>
                 </div>
                 <!-- Navbar Options to click -->
                 <div class="options">
@@ -48,7 +48,7 @@
         <!-- Navbar ends here -->
         <!-- Content Part Starts here -->
         <div class="second">
-            <p class="second1">Welcome to MedMingle!!</p>
+            <p class="second1">Welcome to BIOSync!!</p>
         </div>
         <!-- Content Part Ends Here -->
     </div>
