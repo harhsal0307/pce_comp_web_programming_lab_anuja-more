@@ -257,6 +257,86 @@ ul{
       width: 100%;
   }
   }
+  .scrollable-section {
+    margin: 0;
+    position: relative;
+    align-items: center;
+    background-image: url(static/img/Lovepik_com-400116130-science-and-technology-background-of-artificial-intelligence.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    height: 100vh;
+    color: white;
+}
+/* Dividing the Page into two parts for navbar and content */
+.bgimg2::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+.txt-1{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    font-size: 10vh;
+}
+.txt-2{
+    position: relative;
+    width: 55%;
+    top: 100px;
+    left: 20px;
+    font-size: 3vh;
+}
+
+.video-1 {
+    border-radius: 20px;
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    
+}
+
+
+.features-table {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    top: 60%;
+    left: 2%;
+}
+
+.features-table th, .features-table td {
+    border: 1px double white;
+    width: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.tick-icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-right: 10px;
+}
+
+
+/* Footer Styles */
+.footer {
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
 
     
 </style>
