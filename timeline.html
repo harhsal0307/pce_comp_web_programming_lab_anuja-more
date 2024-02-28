@@ -6,7 +6,9 @@
     <title>Medical Research Timeline</title>
     <link rel="stylesheet" href="timeline.css">
 </head>
+
 <body>
+    
     <header>
         <div class="container1">
             <!-- Navbar starts here -->
@@ -38,7 +40,7 @@
     </header>
 
         <div class="container2">
-        <h2>Medical Research Timeline</h2>
+        <div class="canvas"><canvas id="myCanvas" width="400" height="100">Canvas unable to load</canvas></div>
         <table>
             <thead>
                 <tr>
@@ -110,5 +112,11 @@
             </tbody>
         </table>
         </div>
-        </body>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px TimesNewRoman";
+            ctx.fillText("Medical Research Timeline",10,50);
+        </script>    
+    </body>
 </html>

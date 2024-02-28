@@ -159,7 +159,7 @@ p{
   }
 
   .bgimg {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(static/img/medical-desk-with-stethoscope-mask.jpg);
     background-size: cover; 
   }

@@ -284,3 +284,26 @@ a {
     }
     
 }
+
+/* Adjust the position of text and video for smaller screens */
+@media screen and (max-width: 768px) {
+    .txt-1 {
+        font-size: 6vh;
+    }
+
+    .txt-2 {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .video-1 {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .features-table {
+        width: 80%;
+        top: 80%;
+    }
+}

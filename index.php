@@ -53,15 +53,16 @@
         <!-- Content Part Ends Here -->
     </div>
     <div class="audio-1">
-          <audio id="autoplayAudio"  >
+          <audio id="autoplayAudio" autoplay>
             <source src="static/welc-audio.mp3" type="audio/mpeg">
             Welcome to MedMingle!
           </audio>
           <script>
-            /*document.addEventListener('DOMContentLoaded', function() {
+            /*
+            document.addEventListener('DOMContentLoaded', function() {
                 var audio = document.getElementById('autoplayAudio');
                 audio.play();
-            }); */   
+            });*/
         //     document.addEventListener('DOMContentLoaded', function() {
         //     var audio = document.getElementById('autoplayAudio');
         //     audio.play().then(function() {
@@ -71,10 +72,7 @@
         //         console.error("Autoplay failed:", error);
         //     });
         // }); 
-            function scrollToSection() {
-                var scrollableSection = document.getElementById('scrollable-section');
-                scrollableSection.scrollIntoView({ behavior: 'smooth' });
-            }
+            
         </script>
         </div>
         <!-- Content Part Ends Here -->
@@ -102,20 +100,20 @@
             <table class="features-table">
               <tr><th>Key Features</th></tr>
               <tr>
-                  <td style="width: 50px">Secure Data</td>
+                  <td style="width: 4vw; height: 1.5vw">Secure Data</td>
                   <td style="text-align:center; color:green;">&#10004;</td>
               </tr>
               <tr>
-                  <td>Community Support</td>
+                  <td style="width: 8vw; height: 1.5vw">Community Support</td>
                   <td style="text-align:center; color:green;">&#10004;</td>
 
               </tr>
               <tr>
-                  <td>Transparency</td>
+                  <td style="width: 4vw; height: 1.5vw">Transparency</td>
                   <td style="text-align:center; color:green;">&#10004;</td>
               </tr>
               <tr>
-                  <td>Accessibility</td>
+                  <td style="width: 4vw; height: 1.5vw">Accessibility</td>
                   <td style="text-align:center; color:green;">&#10004;</td>
               </tr>
           </table>
@@ -166,9 +164,15 @@
         </div>
         <p>&copy; 2024 MedMingle. All rights reserved.</p>
      </footer>
-        
+
 
 </body>
+<script>
+  function scrollToSection() {
+                var scrollableSection = document.getElementById('scrollable-section');
+                scrollableSection.scrollIntoView({ behavior: 'smooth' });
+            }
+</script>
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -282,14 +286,14 @@ ul{
 
 .txt-1{
     position: relative;
-    top: 80px;
+    top: 50px;
     left: 20px;
     font-size: 10vh;
 }
 .txt-2{
     position: relative;
     width: 55%;
-    top: 100px;
+    top: 70px;
     left: 20px;
     font-size: 3vh;
 }
@@ -335,6 +339,58 @@ ul{
     padding: 10px;
     text-align: center;
     color: white;
+}
+@media only screen and (max-width: 768px) {
+    .txt-1 {
+        font-size: 6vw;
+        width: 90%;
+    }
+
+    .txt-2 {
+        font-size: 2.5vw;
+    }
+    .video-1 {
+        top: 46%;
+        left: 8%;
+    }
+    video {
+        height: 20%;
+        width: 90%;
+    }
+
+    .features-table {
+        top: 67%;
+        left: 5%;
+        font-size: 4vw;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .txt-1 {
+        font-size: 7vw;
+    }
+
+    .txt-2 {
+        font-size: 4vw;
+        width: 90%;
+    }
+    .video-1 {
+        top: 46%;
+        left: 8%;
+    }
+    video {
+        height: 20%;
+        width: 90%;
+    }
+
+    .features-table {
+        top: 67%;
+        left: 5%;
+        font-size: 4vw;
+        padding: 0;
+    }
+    
 }
 
 
