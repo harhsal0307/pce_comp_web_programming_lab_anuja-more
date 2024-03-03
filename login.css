@@ -36,7 +36,7 @@ p{
 .center{
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     /* background: white; */
@@ -154,7 +154,7 @@ p{
   }
   .center {
     position: relative;
-    top: -750px
+    top: -500px
   }
 
   .bgimg {

@@ -166,7 +166,7 @@ p{
 
   .logbox {
       top: 50px; /* Adjust the top margin for smaller screens */
-      left: 20px; /* Adjust the left margin for smaller screens */
+      left: 50px; /* Adjust the left margin for smaller screens */
       width: calc(100% - 40px); /* Take full width with some padding for smaller screens */
   }
 
