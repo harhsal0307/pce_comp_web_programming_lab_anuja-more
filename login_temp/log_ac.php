@@ -47,7 +47,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             $_SESSION['id'] = $row['id'];
             $_SESSION['name'] = $row['name'];
             // header("Location: home.php");
-            header("Location: /pce_comp_web_programming_lab_anuja-more/index.php");
+            header("Location: home.php");
             exit();
         } else {
             // echo 'Incorrect password'; debug1

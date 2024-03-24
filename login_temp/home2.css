@@ -1,0 +1,125 @@
+* {
+	font-family: 'DM Serif Text', serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-y: scroll;
+	background: linear-gradient(rgba(20,20,20, .55), rgba(20,20,20, .55)), url("../static/img/bg1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 50px;
+	background-color: none;
+	height: 100px;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.35);
+}
+.navbar::after {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar h1{
+	color: white;
+	font-weight: 600;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.options {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_links li {
+	font-size: large;
+	display: inline-block;
+	margin: 0 20px; 
+}
+
+.nav_links li a {
+	padding-bottom: 38px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out 0s; 
+}
+
+.nav_links li a:hover {
+	border-bottom: 5px solid rgba(255, 255, 255, 1);
+}
+.user_profile a {
+	padding-bottom: 38px;
+}
+.user_profile button {
+	display: flex;
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: large;
+	color: white;
+	margin: 38px 13px 0;
+	padding-bottom: 38px;
+	transition: all 0.3s ease-in-out 0s; 
+}
+.user_profile a button:hover {
+	border-bottom: 5px solid rgba(255, 255, 255, 1);
+}
+.render-info {
+	position: relative;
+	color: aliceblue;
+	/* display: grid; */
+	display: flex;
+	width: 90vw;
+	height: 100vh;
+	/* grid-template-columns: 2fr 1fr; */
+	flex-direction: row;
+	justify-content: flex-start;
+	justify-items: flex-start;
+	margin: 3.5%;
+}
+.content {
+	width: 80%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-items: flex-start;
+}
+.blog-in {
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	border-bottom: 2px solid silver;
+	padding: 1%;
+	margin: 0.5%;
+	box-shadow: 0 14px 10px rgba(0, 0, 0, 0.5);
+	height: 13vh;
+	justify-items: left;
+}
+.blog-in .head {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.category {
+	display: grid;
+	grid-template-columns: auto;
+	border: 2.5px solid silver;
+	height: 50%;
+	margin-top: 5%;
+	width: 20%;
+}
+.cat-n {
+	border-bottom: 1px solid silver;
+	height: 0.3%;
+}

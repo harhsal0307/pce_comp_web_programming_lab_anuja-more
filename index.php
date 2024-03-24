@@ -174,23 +174,24 @@
             }
 </script>
 <head>
+      <!-- INTERNAL CSS -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.box-1{
-  /* max-width: 1170px; */
-  margin:auto;
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
-  /* box-sizing: border-box; */
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-ul{
-  list-style: none;
-}
+      .box-1{
+        /* max-width: 1170px; */
+        margin:auto;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        /* box-sizing: border-box; */
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul{
+        list-style: none;
+      }
 .footer{
   background-color: #24262b;
   padding: 20px 0;

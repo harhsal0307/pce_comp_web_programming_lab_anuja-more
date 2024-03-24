@@ -9,6 +9,6 @@
     if(!$conn) {
         echo "Connection Failed";
     } else {
-        echo "Connection Good";
+        //echo "Connection Good";
     }
 ?>

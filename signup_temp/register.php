@@ -31,7 +31,9 @@
                 $password = password_hash($_POST['password1'], PASSWORD_DEFAULT);
                 $stmt->bind_param('ssss', $_POST['fullname'], $_POST['uname'], $_POST['email'], $password);
                 $stmt->execute();
-                echo 'Successfully Registered';
+                session_start();
+                header("Location: /pce_comp_web_programming_lab_anuja-more/login_temp/home.php");
+                // echo 'Successfully Registered';
             } else {
                 echo 'Error Occured';
             }
