@@ -24,7 +24,7 @@
                 <!-- Navbar Options to click -->
                 <div class="options">
                     <ul class="nav_links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="login_temp/home.php">Home</a></li>
                         <!-- <li><a href="#">About Us</a></li> -->
                         <li><a href="#scrollable-section" onclick="scrollToSection()">About Us</a></li>
                         <li><a href="#">Public Researches</a></li>
@@ -266,14 +266,14 @@
     margin: 0;
     position: relative;
     align-items: center;
-    background-image: url(static/img/Lovepik_com-400116130-science-and-technology-background-of-artificial-intelligence.jpg);
+    background-image: url(static/img/abt.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 5px;
     height: 100vh;
     color: white;
 }
-/* Dividing the Page into two parts for navbar and content */
+
 .bgimg2::after {
     content: ' ';
     position: absolute;
@@ -287,14 +287,15 @@
 
 .txt-1{
     position: relative;
-    top: 50px;
+    top: 80px;
     left: 20px;
     font-size: 10vh;
 }
+
 .txt-2{
     position: relative;
     width: 55%;
-    top: 70px;
+    top: 100px;
     left: 20px;
     font-size: 3vh;
 }
@@ -304,9 +305,7 @@
     position: absolute;
     left: 60%;
     top: 25%;
-    
 }
-
 
 .features-table {
     position: absolute;
@@ -332,6 +331,24 @@
     margin-right: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .scrollable-section, .bgimg2, .txt-1, .txt-2, .video-1, .features-table {
+    width: 100%;
+  }
+  .txt-1, .txt-2 {
+    font-size: 5vh;
+  }
+  .video-1 {
+    left: 0;
+    top: 0;
+  }
+  .features-table {
+    width: 90%;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+}
 
 /* Footer Styles */
 .footer {
@@ -393,6 +410,7 @@
     }
     
 }
+
 
 
     
