@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'DM Serif Text', serif;
     display: flex;
@@ -5,24 +6,12 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    /* background-image: url(/sem_4/static/img/signbg.png);  */
     background-image: url(../static/img/signbg.png);
     background-size: cover;
     height: 100vh;
 }
 
-/* .bgimg {
-    align-items: center;
-    margin: 0;
-    position: relative;
-    background-image: url(signbg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 100vh; 
-} */
-
-.center{ 
+.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,20 +24,24 @@ body {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75);
     background-color: rgba(255, 255, 255, 0.55);
 }
+
 h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 img { 
     width: 90px;
     height: 100px;
 }
-form .txt_field{
+
+form .txt_field {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 15px 0;
-  }
-.txt_field input{
+}
+
+.txt_field input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -57,7 +50,8 @@ form .txt_field{
     background: none;
     outline: none;
 }
-.txt_field label{
+
+.txt_field label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -67,7 +61,8 @@ form .txt_field{
     pointer-events: none;
     transition: .5s;
 }
-.txt_field span::before{
+
+.txt_field span::before {
     content: '';
     position: absolute;
     top: 40px;
@@ -76,35 +71,38 @@ form .txt_field{
     height: 2px;
     background: aliceblue;
     transition: .5s;
-  }
-  .txt_field input:focus ~ label,
-  .txt_field input:valid ~ label{
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
     top: -1px;
     color: aliceblue;
     font-weight: bold;
-  }
-  .txt_field input:focus ~ span::before,
-  .txt_field input:valid ~ span::before{
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
     width: 100%;
-  }
-  .pass{
+}
+
+.pass {
     margin: -5px 0 10px 5px;
     color: #a6a6a6;
     font-size: 14.3px;
     cursor: pointer;
     transition: .25s;
-  }
-  .pass:hover{
+}
+
+.pass:hover {
     color: white;
     text-decoration: underline;
-  }
-  input[type="submit"]{
+}
+
+input[type="submit"] {
     width: 100%;
     height: 40px;
     border: 1px solid;
-    /* background: #2691d9; */
     background-color: rgba(0, 0, 0, 0.55);
-
     border-radius: 25px;
     font-size: 18px;
     color: #e9f4fb;
@@ -112,24 +110,43 @@ form .txt_field{
     cursor: pointer;
     outline: none;
     transition: .5s ease-in;
-    }
-  input[type="submit"]:hover{
+}
+
+input[type="submit"]:hover {
     border-color: aliceblue;
     border: 2px solid;
-    
-  }
-  .signup_link{
+}
+
+.signup_link {
     margin: 5px 0;
     text-align: center;
     font-size: 14.3px;
     color: rgba(240, 248, 255, 0.5);
-  }
-  .signup_link a{
+}
+
+.signup_link a {
     color: aliceblue;
     text-decoration: none;
-  }
-  .signup_link a:hover{
+}
+
+.signup_link a:hover {
     text-decoration: underline;
-  }
+}
 
+/* Media Query for screens below 460px width */
+@media screen and (max-width: 460px) {
+    .center {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
 
+    img {
+        width: 70px;
+        height: 80px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
