@@ -109,7 +109,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])) {
 							<div class="buttons">
 							<button onclick="home()">Home</button>
 						<?php
-							echo '<div class = "button"><button><a href="msg.php?email='.$email.'">Message</button></div>'; 
+							echo '<div class = "button"><button><a href="msg.php?email='.$email.'">Message</a></button></div>'; 
 						?>
 							</div>
 						<?php
