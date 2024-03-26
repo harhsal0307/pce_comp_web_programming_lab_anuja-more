@@ -67,7 +67,7 @@
     if($row["author"] == $id) {
       echo '<div class="options">
         <div class="actions">
-            <a class="read" href="#">View complete article</a>
+            <a class="read" href="read.php?aid='.$row["aid"].'">View complete article</a>
         </div>
 
         <div class="actions1">
@@ -78,7 +78,7 @@
     } else {
       echo '<div class="options">
         <div class="actions">
-            <a class="read" href="#">View complete article</a>
+            <a class="read" href="read.php?aid='.$row["aid"].'">View complete article</a>
         </div>
 
         <div class="actions1">
@@ -102,29 +102,40 @@
 </body>
 </html>
 <script>
-  function create_window() {
-  var w = 500; // width of the window
-  var h = 500; // height of the window
-  var left = (screen.width/2)-(w/2);
-  var top = (screen.height/2)-(h/2);
-  var win = window.open("", "newWin", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
-  
-  win.document.body.innerHTML = `
+function create_window() {
+    var w = 500; // width of the window
+    var h = 500; // height of the window
+    var left = (screen.width / 2) - (w / 2);
+    var top = (screen.height / 2) - (h / 2);
+    var win = window.open("", "newWin", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+    win.document.body.innerHTML = `
     <title>Create an Article</title>
     <head><link rel="stylesheet" href="home.css"></head>
     <div class = "create-form">
     <h1>Create New Article</h1>
-    <form action="create.php" method="POST">
-      <label for="data">Title:</label><br>
-      <input type="text" id="title" name="title"><br>
-      <label for="data">Article Content:</label><br>
-      <textarea id="data" name="data" rows="11" columns="50"></textarea>
-      <input type="submit" value="Submit">
+    <form id="myForm" action="create.php" method="POST" target="_self">
+        <label for="data">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="data">Article Content:</label><br>
+        <textarea id="data" name="data" rows="11" columns="50"></textarea>
+        <input type="submit" value="Submit" id="submitBtn">
     </form>
     </div>
-  `;
+    `;
+
+    win.document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        setTimeout(function() {
+            event.target.submit(); 
+        }, 1000); 
+        setTimeout(function() {
+            win.close();
+        }, 1500); 
+    });
 }
 </script>
+
 <?php 
   } else {
     header("Location: login_pg.php");

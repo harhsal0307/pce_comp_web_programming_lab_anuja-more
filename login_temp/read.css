@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row ;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.article{
+    background-color: rgb(221, 221, 221);
+    font-family: "Lora";
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: 600;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    vertical-align: top;
+    font-size: 2vw;
+}
+.deets{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: orangered;
+}
+.marg{
+    margin-right: 5px;
+}
+p{
+    display: block;
+}

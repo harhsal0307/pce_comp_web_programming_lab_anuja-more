@@ -117,6 +117,14 @@
                   <td style="text-align:center; color:green;">&#10004;</td>
               </tr>
           </table>
+          <div class="know-more">
+            <button onclick="gotoAboutus()">Know More</button>
+          </div>
+          <script>
+            function gotoAboutus() {
+              window.location.href = "aboutus.php";
+            }
+          </script>
         </div>
         
         
@@ -148,7 +156,7 @@
              <h4>Location</h4>
              <ul>
                <li><a href="#">Pillai College of Engineering,<br> New Panvel</a></li>
-               
+               <li><div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.669434395344!2d73.12509517443422!3d18.990200982196754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e866de88667f%3A0xc1c5d5badc610f5f!2sPillai%20College%20of%20Engineering%2C%20New%20Panvel%20(Autonomous)!5e0!3m2!1sen!2sin!4v1711457819821!5m2!1sen!2sin" style="border:0; border-radius:1vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></li>
              </ul>
            </div>
            <div class="footer-col" style="margin-top: 20px;">
@@ -251,14 +259,25 @@
   color: #24262b;
   background-color: #ffffff;
 }
+.map {
+    width: 1.4vw;
+    position: relative;
+    border-radius: 5vh;
+    top: -11vh;
+    left: 22vw;
+}
 @media(max-width: 767px){
-    .footer-col{
+    .footer-col, .map{
       width: 50%;
       margin-bottom: 30px;
   }
+  .map{
+    left: 0;
+    top: 0;
+  }
   }
   @media(max-width: 574px){
-    .footer-col{
+    .footer-col, .map{
       width: 100%;
   }
   }

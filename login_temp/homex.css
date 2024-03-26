@@ -72,7 +72,6 @@ button a{
 }
 
 img{
-    position: relative;
     display: block;
     width: 100%;
     height: 300px;
@@ -82,7 +81,6 @@ img{
 .content{
     display: inline-flex;
     justify-content: space-around;
-    width: 100%;
 }
 .cards {
     /* position: absolute; */
@@ -92,7 +90,7 @@ img{
 }
 .card {
     color: black;
-    max-width: 100%;
+    width: 100%;
     margin-top: 1rem;
     margin-left: 1rem;
     border-width: 1px;
@@ -154,14 +152,15 @@ img{
     font-weight: 600;
     background-color: rgba(59, 130, 246, 1);
     color: rgba(255, 255, 255, 1);
-    transition: ease-in 0.25s;
 }
-.read:hover,.edit:hover,.delete:hover, .author:hover{
+
+.read:hover, .edit:hover, .delete:hover, .author:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     background-color: rgb(255, 255, 255);
     color: rgba(59, 130, 246, 1);
     border: 2px solid rgba(59, 130, 246, 1);
 } 
+
 .edit{
     margin-left: 0.75rem;
 }
@@ -221,7 +220,28 @@ input[type="submit"]:hover {
 textarea ,input {
     border-radius: 2px;
 }
-  
 
+@media (min-width :300px) and (max-width: 940px){
+    *{
+        overflow-x: hidden;
+    }
+    .links{
+        display: none;
+    }
+    .cards{
+        width:34rem;
+    }
+    .card{
+        margin-left:10px;
+    }
+    .nav-sec{
+        justify-content: space-between;
+    }
+    button{
+        width:fit-content;
+    }
+    .logo ul{
+        width:10rem;
+    }
 
-
+}

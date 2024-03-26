@@ -121,6 +121,16 @@ a {
     margin-left: 380px;
     animation: animate 3s /*infinite*/ 3s;
 }
+.know-more {
+    display: none;
+    
+}
+.know-more button{
+    background-color: rgba(0, 0, 0, 0.55);
+    color: aliceblue;
+    border-radius: 2vh;
+}
+
 
 /* Footer Styles */
 .footer {
@@ -130,6 +140,7 @@ a {
     text-align: center;
     color: white;
 }
+
 
 
 /* Text Ke liye animations */
@@ -144,6 +155,7 @@ a {
 
 /* Media Queries for making the web page responsive */
 @media only screen and (max-width: 768px) {
+
     .container {
         grid-template-rows: 80px 1fr; /* Adjust as needed for smaller screens */
     }
@@ -164,9 +176,25 @@ a {
         margin-left: 20px; /* Adjust margin for smaller screens */
         font-size: 40px; /* Adjust font size for smaller screens */
     }
+    table, video{
+        display: none;
+    }
+    .know-more {
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 60vh;
+        right: 30vw;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden; 
+    }
     .navbar {
         margin: 0 10px; /* Further adjust margins for even smaller screens */
     }
@@ -178,6 +206,18 @@ a {
     .second1 {
         margin-left: 10px; /* Further adjust margin for even smaller screens */
         font-size: 30px; /* Further adjust font size for even smaller screens */
+    }
+    table, video{
+        display: none;
+    }
+    .know-more {
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 60vh;
+        right: 30vw;
     }
 }
 @media only screen and (max-width: 768px) {
