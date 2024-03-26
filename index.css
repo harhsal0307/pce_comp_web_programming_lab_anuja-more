@@ -240,8 +240,10 @@ a {
         width: 90%;
     }
     .video-1 {
-        top: 40%;
+         top: 46%;
         left: 8%;
+        padding-left: 95%;
+        padding-top: 30%;
     }
     video {
         height: 20%;
