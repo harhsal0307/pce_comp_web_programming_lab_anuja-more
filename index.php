@@ -413,8 +413,10 @@
         width: 90%;
     }
     .video-1 {
-        top: 46%;
-        left: 8%;
+    top: 46%;
+    left: 54%;
+    padding-top: -23px;
+    padding-bottom: 113px;
     }
     video {
         height: 20%;
